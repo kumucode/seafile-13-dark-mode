@@ -1,0 +1,492 @@
+/* Seafile 13 Dark Theme - Targeted Approach */
+:root {
+    --primary-color: #f5a700;
+    --primary-text-color: #ffffff;
+    /* Changed from #000000 to white for dark theme */
+    --primary-color-darken: color-mix(in srgb, var(--primary-color) 80%, #000);
+    --primary-color-more-darken: color-mix(in srgb, var(--primary-color) 70%, #000);
+    --primary-light-10: color-mix(in srgb, var(--primary-color) 10%, transparent);
+    --primary-light-70: color-mix(in srgb, var(--primary-color) 70%, transparent);
+
+    /* Override Bootstrap variables for dark theme */
+    --bs-body-bg: #2d2d2d !important;
+    --bs-body-color: #e0e0e0 !important;
+    --bs-border-secondary-color: #404040 !important;
+}
+
+/* Base dark theme colors */
+body,
+html {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Human Input */
+
+.dir-content-nav {
+    background:
+        #1c1c1c !important;
+}
+
+/* Main Seafile layout containers */
+.main-panel,
+.side-panel,
+.content,
+.container-fluid,
+.sys-admin,
+.org-admin,
+.cur-view-content,
+.repos-container,
+.files-content-container {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Header bars and top navigation */
+.main-panel-north,
+.cur-view-toolbar,
+.common-toolbar,
+.shared-file-view-head,
+.shared-file-view-md-header,
+.cur-view-path,
+.side-panel-north,
+.top-logo,
+.top-bar,
+.header,
+.navbar,
+.sys-admin .main-panel .top-bar,
+.org-admin .main-panel .top-bar,
+#header,
+.main-panel .header {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border-bottom-color: #404040 !important;
+}
+
+/* Shared file header text elements */
+.shared-file-view-head h2,
+.shared-file-view-head h2.ellipsis,
+.shared-file-view-md-header h2,
+.shared-file-view-md-header p,
+.share-by,
+.cur-view-path h3,
+.sf-heading {
+    color: #e0e0e0 !important;
+}
+
+/* Make shared file name orange */
+.shared-file-view-head h2,
+.shared-file-view-head h2.ellipsis {
+    color: var(--primary-color) !important;
+}
+
+/* File toolbar and dropdown elements */
+.file-toolbar-btn,
+.dropdown-menu {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border-color: #404040 !important;
+}
+
+/* Account popup and dropdown elements in header */
+.account-popup,
+.sf-popover,
+#user-info-popup {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border-color: #404040 !important;
+}
+
+.account-popup .item,
+.sf-popover .item {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+.account-popup .item:hover,
+.sf-popover .item:hover {
+    background-color: #404040 !important;
+}
+
+/* File sharing and preview pages */
+.shared-file-view-body,
+.shared-file-view,
+.file-view,
+.file-view-content,
+.file-preview,
+#main,
+#main-panel,
+.main,
+.file-view-tip {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Shared file containers */
+.shared-file-view-body.d-flex {
+    background-color: #1a1a1a !important;
+}
+
+.shared-file-view-body .flex-1 {
+    background-color: #1a1a1a !important;
+}
+
+/* System Admin sidebar - target the specific structure from your screenshot */
+.sys-admin .side-panel {
+    background-color: #2d2d2d !important;
+}
+
+.sys-admin .side-panel .side-nav,
+.sys-admin .side-panel .side-nav-con,
+.side-nav,
+.side-nav-con {
+    background-color: #2d2d2d !important;
+}
+
+/* Navigation items in sidebar */
+.sys-admin .side-panel .nav-item,
+.sys-admin .side-panel .nav-item .nav-link,
+.side-nav .nav-item,
+.side-nav .nav-item .nav-link {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+.sys-admin .side-panel .nav-item .nav-link:hover,
+.side-nav .nav-item .nav-link:hover {
+    background-color: #404040 !important;
+    color: #ffffff !important;
+}
+
+/* Main content area */
+.sys-admin .main-panel,
+.org-admin .main-panel {
+    background-color: #1a1a1a !important;
+}
+
+/* Cards and content blocks */
+.card,
+.card-body,
+.list-group,
+.list-group-item,
+.panel,
+.panel-body {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border-color: #404040 !important;
+}
+
+/* File view containers */
+.file-content,
+.file-info,
+.file-op,
+.file-view-header {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+/* Form elements */
+.form-control,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select,
+.input-group {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border-color: #404040 !important;
+}
+
+.form-control:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #333333 !important;
+    color: #ffffff !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--primary-color) 25%, transparent) !important;
+}
+
+/* Dropdowns */
+.dropdown-menu {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+}
+
+.dropdown-item {
+    color: #e0e0e0 !important;
+    background-color: transparent !important;
+}
+
+/* Tables - file browser styling */
+.table,
+.table th,
+.table td,
+.table-thead-hidden,
+.table-thead-hidden th,
+.table-thead-hidden td {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border-color: #404040 !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #333333 !important;
+}
+
+/* File browser specific elements */
+.libraries-empty-tip-in-list-mode,
+.sf-border-bottom {
+    color: #b0b0b0 !important;
+    border-color: #404040 !important;
+}
+
+/* Text elements - be more specific to avoid breaking media controls */
+.sys-admin h1,
+.sys-admin h2,
+.sys-admin h3,
+.sys-admin h4,
+.sys-admin h5,
+.sys-admin h6,
+.org-admin h1,
+.org-admin h2,
+.org-admin h3,
+.org-admin h4,
+.org-admin h5,
+.org-admin h6,
+.side-panel h1,
+.side-panel h2,
+.side-panel h3,
+.side-panel h4,
+.side-panel h5,
+.side-panel h6,
+.main-panel h1,
+.main-panel h2,
+.main-panel h3,
+.main-panel h4,
+.main-panel h5,
+.main-panel h6,
+.card h1,
+.card h2,
+.card h3,
+.card h4,
+.card h5,
+.card h6,
+.side-panel p,
+.side-panel span,
+.side-panel label,
+.main-panel p,
+.main-panel span,
+.main-panel label,
+.card p,
+.card span,
+.card label,
+.file-view h1,
+.file-view h2,
+.file-view h3,
+.file-view h4,
+.file-view h5,
+.file-view h6,
+.file-view p,
+.file-view span,
+.file-view label,
+.file-view div,
+#main h1,
+#main h2,
+#main h3,
+#main h4,
+#main h5,
+#main h6,
+#main p,
+#main span,
+#main label,
+#main div {
+    color: #e0e0e0 !important;
+}
+
+/* Buttons */
+.btn-secondary,
+.btn-default,
+.btn-light {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border-color: #555555 !important;
+}
+
+.btn-secondary:hover,
+.btn-default:hover,
+.btn-light:hover {
+    background-color: #555555 !important;
+    color: #ffffff !important;
+}
+
+/* Modals */
+.modal-content {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+.modal-header {
+    border-bottom-color: #404040 !important;
+}
+
+.modal-footer {
+    border-top-color: #404040 !important;
+}
+
+/* Preserve media player and video controls - DO NOT style these */
+video,
+audio,
+.video-js,
+.vjs-control-bar,
+.vjs-big-play-button,
+[class*="video"],
+[class*="player"],
+[class*="media"] {
+    background-color: initial !important;
+    color: initial !important;
+}
+
+/* Original Seafile component styles */
+a,
+.op-target {
+    color: var(--primary-color);
+}
+
+#login-bottom .bottom-item {
+    border-right-color: var(--primary-color);
+}
+
+a:focus,
+a:hover {
+    color: var(--primary-color-darken);
+}
+
+.btn-primary {
+    color: var(--primary-text-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color-darken);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:not(:disabled):not(.disabled):hover,
+.btn-primary:not(:disabled):not(.disabled):focus {
+    color: var(--primary-text-color);
+    background-color: var(--primary-color-darken);
+    border-color: var(--primary-color-more-darken);
+    box-shadow: none !important;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):hover,
+.btn-outline-primary:not(:disabled):not(.disabled):focus,
+.show>.btn-outline-primary.dropdown-toggle {
+    color: var(--primary-text-color);
+    background-color: var(--primary-color-darken);
+    border-color: var(--primary-color-more-darken);
+    box-shadow: none !important;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: var(--primary-text-color);
+    background-color: var(--primary-color-darken);
+    border-color: var(--primary-color-more-darken);
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+    color: var(--primary-color-darken);
+    border-color: var(--primary-color-darken);
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: var(--primary-color-more-darken);
+    border-color: var(--primary-color-more-darken);
+    box-shadow: none !important;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: var(--primary-color-more-darken);
+    border-color: var(--primary-color-more-darken);
+    box-shadow: none !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: var(--primary-text-color);
+    background-color: var(--primary-color);
+}
+
+.side-panel .side-nav .side-nav-con .nav-item.active::before,
+.lib-setting-nav .nav-pills .nav-item .nav-link.active:before,
+.share-dialog-side .nav-pills .nav-item .nav-link.active:before,
+.custom-modal .repo-list-item.active:before,
+.file-chooser-item .item-active:before {
+    background-color: var(--primary-color-darken);
+}
+
+.nav .nav-item .nav-link.active {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.org-admin .main-panel .nav .nav-item .nav-link.active,
+.sys-admin .main-panel .nav .nav-item .nav-link.active {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.side-textnav-tabs .tab-cur a,
+.side-textnav-tabs .tab a:hover {
+    color: var(--primary-color);
+}
+
+.old-history-main .file-name,
+.old-history-main .commit-list .username,
+.old-history-main .go-back:hover {
+    color: var(--primary-color);
+}
+
+#upload-link-drop-zone {
+    border-color: var(--primary-color-darken);
+    background-color: var(--primary-light-10);
+}
+
+#upload-link-drop-zone .upload-icon {
+    color: var(--primary-light-70);
+}
+
+.upload-progress .progress .progress-bar,
+.progress-bar {
+    background-color: var(--primary-color-darken);
+}
+
+#notifications .num {
+    background: var(--primary-color-darken);
+    color: var(--primary-text-color);
+}
+
+#notice-popover li.unread {
+    border-left-color: var(--primary-color-darken);
+}
+
+.wiki-card-item .wiki-card-item-top .sf3-font-wiki.sf3-font {
+    color: var(--primary-color);
+}
