@@ -24,22 +24,27 @@ Keeps layout behavior intact while changing appearance
 Top bars, headers, and side panels
 Admin dashboards (system + organization)
 File navigation and toolbars
+
 📂 File Browser & Content
 Tables and file lists
 Shared file views
 File preview areas
+
 🧾 Forms & Inputs
 Text fields, dropdowns, textareas
 Focus states with accent color highlight
 Improved contrast for better visibility
+
 🪟 Modals & Popups
 Account menus
 Dropdowns
 Dialog windows
+
 🔘 Buttons
 Primary + secondary styles
 Hover, active, and disabled states
 Consistent dark-friendly behavior
+
 ⚠️ What It Doesn’t Touch
 
 To avoid breaking functionality, this theme intentionally skips:
@@ -70,6 +75,7 @@ Inject via reverse proxy
 Add to custom branding/theme config
 Or include in your frontend build
 Refresh your browser (clear cache if needed)
+
 💡 Customization
 
 You can easily tweak the theme via CSS variables:
