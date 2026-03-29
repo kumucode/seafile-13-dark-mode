@@ -6,16 +6,19 @@ A clean, fully dark UI theme for Seafile 13 that overrides default styles with a
 Deep background tones (#1a1a1a, #2d2d2d)
 Soft, readable text (#e0e0e0)
 Designed for long sessions without eye fatigue
+
 🎨 Accent Color System
 Primary color: orange (#f5a700)
 Uses color-mix() for smooth hover and active states
 Applied consistently across buttons, links, and highlights
+
 🧩 Bootstrap Integration
 Overrides core Bootstrap variables:
 --bs-body-bg
 --bs-body-color
 Borders and UI elements
 Keeps layout behavior intact while changing appearance
+
 🧱 What Gets Styled
 🧭 Navigation & Layout
 Top bars, headers, and side panels
